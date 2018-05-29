@@ -1,29 +1,32 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './UserCard.css';
+import Avatar from './Avatar';
+import Badge from './Badge';
+
 
 class UserCard extends Component {
 
   static propTypes = {
     userName: PropTypes.string.isRequired,
-    avatar: PropTypes.element.isRequired,
+    imageURL: PropTypes.string.isRequired,
     rank: PropTypes.string.isRequired,
-    badge: PropTypes.element.isRequired,
+    number: PropTypes.number.isRequired,
     isPresent: PropTypes.bool,
   }
 
   render() {
     const userName = this.props.userName;
-    const avatar = this.props.avatar;
+    const imageURL = this.props.imageURL;
     const rank = this.props.rank;
-    const badge = this.props.badge;
+    const number = this.props.number;
 
     return (
       <article className='user-card'>
-        <img className='image' src={avatar.props.imageURL} alt='avatar' />
+        <Avatar imageURL={imageURL} />
         <p>{userName}</p>
         <p>{rank}</p>
-        <p>{badge.props.number}</p>
+        <p><Badge number={number}/></p>
       </article>
     );
   }

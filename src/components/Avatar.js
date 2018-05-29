@@ -13,7 +13,7 @@ class Avatar extends Component {
     const imageURL = this.props.imageURL;
 
     return (
-      <img src={imageURL} alt='avatar' />
+      <img className='image' src={imageURL} alt='avatar' />
     );
   }
 }
