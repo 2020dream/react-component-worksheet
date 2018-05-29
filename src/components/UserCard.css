@@ -1,0 +1,10 @@
+.user-card {
+  background-color: teal;
+  color: white;
+  width: 200px;
+  padding: 5px;
+}
+
+.image {
+  width: 200px;
+}
