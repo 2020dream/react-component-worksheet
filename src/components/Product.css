@@ -1,0 +1,8 @@
+.red {
+  color: red;
+}
+
+.delete {
+  text-decoration: line-through;
+  color: grey;
+}
