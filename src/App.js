@@ -5,7 +5,7 @@ import Avatar from './components/Avatar';
 import Badge from './components/Badge';
 import Product from './components/Product';
 import UserCard from './components/UserCard';
-
+import ProductList from './components/ProductList';
 
 class App extends Component {
 
@@ -35,6 +35,7 @@ class App extends Component {
           rank='VIP'
           number={10}
         />
+        <ProductList />
       </div>
     );
   }
